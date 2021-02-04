@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    version="2.3">
+    
+    
+    <navigation-rule>
+		<from-view-id>/inicio.xhtml</from-view-id>
+		
+		<navigation-case>
+			<from-outcome>agregarC</from-outcome>
+			<to-view-id>/agregarCliente.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>agregarR</from-outcome>
+			<to-view-id>/agregarRestaurante.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>registrarR</from-outcome>
+			<to-view-id>/agregarReserva.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/agregarCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>agregarc</from-outcome>
+			<to-view-id>/agregarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/agregarRestaurante.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>agregarR</from-outcome>
+			<to-view-id>/agregarRestaurante.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<from-view-id>/agregarReserva.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>agregarR</from-outcome>
+			<to-view-id>/agregarReserva.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+
+</faces-config>

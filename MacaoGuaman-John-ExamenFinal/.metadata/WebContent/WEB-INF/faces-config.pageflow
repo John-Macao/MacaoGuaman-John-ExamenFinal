@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16124617138960" configfile="/MacaoGuaman-John-ExamenFinal/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="inicio.xhtml" x="338" y="370" id="pf16124618044201" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" outlinks="pf16124618387658 pf16124618387659 pf161246183876510" inlinks="pf161246426420518" path="/inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="agregarCliente.xhtml" x="122" y="370" id="pf161246183876511" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf161246426420519 pf161246426420518" inlinks="pf16124618387658 pf161246426420519" path="/agregarCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="agregarRestaurante.xhtml" x="554" y="178" id="pf161246183876512" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16124618387659" path="/agregarRestaurante.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registrarReserva.xhtml" x="554" y="562" id="pf161246183876513" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf161246183876510" path="/agregarReserva.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="AgregarCliente.xhtml" x="122" y="754" id="pf161246245894416" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" path="/agregarCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="InicioEmpleado.xhtml" x="122" y="1138" id="pf161246245894417" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" path="/inicio.xhtml"/>
+  <links id="pf16124618387658" target="pf161246183876511" source="pf16124618044201" outcome="agregarC"/>
+  <links id="pf16124618387659" target="pf161246183876512" source="pf16124618044201" outcome="agregarR"/>
+  <links id="pf161246183876510" target="pf161246183876513" source="pf16124618044201" outcome="registrarR"/>
+  <links id="pf161246426420518" target="pf16124618044201" source="pf161246183876511" outcome="inicioe"/>
+  <links id="pf161246426420519" target="pf161246183876511" source="pf161246183876511" outcome="agregarc">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>
